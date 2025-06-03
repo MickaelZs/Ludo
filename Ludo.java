@@ -81,11 +81,15 @@ public class Ludo {
         Scanner e = new Scanner(System.in);
         Random rand = new Random();
 
+        System.out.println("Bem-vindo ao Ludozinho!");
+        System.out.println(" === Ludozinho === ");
+
         int[] posA = new int[] {base[0], base[1]};
         int[] posB = new int[] {base[0], base[1]};
         boolean jogadorAtual = true;
 
         while (true) {
+            System.out.println("Tabuleiro Atual:");
             imprimirTabuleiro(posA, posB, casaSeg, tam);
             String jogador = jogadorAtual ? "A" : "B";
 
